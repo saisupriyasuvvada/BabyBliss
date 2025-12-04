@@ -1,0 +1,115 @@
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background: #fff4f4;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ff6f61;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero-btn:hover {
+  opacity: 0.9;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* --- CATEGORY STRIP --- */
+.category-strip {
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.cat-item {
+  padding: 12px 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.cat-item:hover {
+  background: #ffefef;
+}
+
+/* --- PRODUCT GRID --- */
+.products-section {
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.products-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center; /* center each card horizontally */
+}
+
+.notify-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+/* --- NOTIFICATION BUTTON --- */
+.notify-container {
+  margin: 40px 0;
+  text-align: center;
+}

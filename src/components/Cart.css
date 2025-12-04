@@ -1,0 +1,31 @@
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -550px;    
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  z-index: 2000;
+}
+
+.cart-panel.open {
+  right: 0;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-body {
+  margin-top: 20px;
+}
+
+button{
+    background-color: none;
+    font-size: 10px;
+}

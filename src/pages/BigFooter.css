@@ -1,0 +1,143 @@
+.big-footer-section {
+  background-color: #ffe4e1; /* soft pink */
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+/* Top banner */
+.footer-banner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  z-index: 10;
+}
+
+.footer-banner h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff69b4; /* pink text */
+  margin: 0;
+}
+
+/* Footer main content layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.footer-column {
+  flex: 1 1 200px; /* min width for column */
+  min-width: 180px;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-list li:hover {
+  color: #000;
+}
+
+/* App buttons */
+.app-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  background-color: #fff;
+  color: #ff69b4;
+  padding: 5px 12px; /* smaller buttons */
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.store-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Footer bottom */
+.footer-bottom {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .app-buttons {
+    justify-content: flex-start;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .app-buttons {
+    justify-content: center;
+  }
+
+  .footer-banner h2 {
+    font-size: 1rem;
+    padding: 6px 16px;
+  }
+
+  .store-btn {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+}

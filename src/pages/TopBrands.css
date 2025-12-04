@@ -1,0 +1,44 @@
+.top-brands-section {
+  padding: 40px 20px;
+  /* background: linear-gradient(90deg, #ffe4e1 0%, #fff0f5 100%); same as hero */
+}
+
+.top-brands-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Marquee container */
+.brands-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Track animation */
+.brands-track {
+  display: flex;
+  width: calc(200%); /* double width because we duplicated brands */
+  animation: scroll 20s linear infinite; /* speed of scrolling */
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Brand card */
+.brand-card {
+  flex: 0 0 auto; /* don’t shrink */
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-image {
+  height: 40px; /* small logos */
+  object-fit: contain;
+}

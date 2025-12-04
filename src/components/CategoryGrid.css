@@ -1,0 +1,71 @@
+/* Specific to CategoryGrid component */
+.category-grid-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-grid-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.category-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category-grid-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Important to clip overlay */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure proper width */
+}
+
+.category-grid-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-grid-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.category-grid-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Keep inside card */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(238, 132, 12);
+  padding: 10px 0;
+  font-size: 28px;
+  font-weight: bold;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .category-grid-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .category-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .category-grid-image {
+    height: 180px;
+  }
+}
